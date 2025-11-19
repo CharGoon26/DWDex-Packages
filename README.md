@@ -1,9 +1,7 @@
 # BD packages used in DW Dex
-If any used...
+If any used, like any other package...
 
 ## Installation 
-Like any other package...
-
 # Step 1 
 Copy the folder `wishlist` to `BallsDex-DiscordBot/ballsdex/packages` directory
 
