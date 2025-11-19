@@ -6,7 +6,6 @@ from tortoise.functions import Count
 from ballsdex.core.models import Ball, BallInstance, Player, balls, Special
 from ballsdex.core.utils.paginator import FieldPageSource, Pages, TextPageSource
 
-# Leaderboard command made by wascertified.
 # This command sends the top 10 players with the most balls in ephemeral.
 
 class Leaderboard(commands.Cog):
