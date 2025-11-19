@@ -1,9 +1,6 @@
 # BD packages used in DW Dex
 If any used...
 
-# Wishlist BD package
-A little wishlist system to list what cards you want!
-
 > [!IMPORTANT]
 > If you have any difficulties or bugs with using this package, contact me on discord @melanutella
 
