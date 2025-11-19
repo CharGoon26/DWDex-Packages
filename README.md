@@ -1,9 +1,6 @@
 # BD packages used in DW Dex
 If any used...
 
-> [!IMPORTANT]
-> If you have any difficulties or bugs with using this package, contact me on discord @melanutella
-
 ## Installation 
 Like any other package...
 
@@ -15,6 +12,8 @@ Open the config.yml file scroll down to the list of `packages` and add `ballsdex
 
 and ur done!
 
+> [!IMPORTANT]
+> If you have any difficulties or bugs with using this package, contact me on discord @melanutella
 
 
 
