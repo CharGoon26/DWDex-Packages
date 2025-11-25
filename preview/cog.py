@@ -102,6 +102,7 @@ class Preview(commands.Cog):
             )
             embed.set_image(url="attachment://preview_card.webp")
             embed.add_field(name="Ownership", value=ownership_text, inline=True)
+            embed.add_field(name="Rarity", value=f"{selected_ball.rarity}%", inline=True)
             
             await interaction.followup.send(embed=embed, file=file, ephemeral=False)
         except Exception as e:
