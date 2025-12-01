@@ -24,7 +24,7 @@ class Events(commands.Cog):
         """
         List all special events with their details.
         """
-        await interaction.response.defer(ephemeral=False)
+        await interaction.response.defer(ephemeral=True)
         
         # Get all specials ordered by PK descending (newest first)
         specials = await Special.all().order_by('-id')
@@ -74,8 +74,12 @@ class Events(commands.Cog):
             else:
                 date_range = "Ongoing"
             
-            # Format: Name | Emoji | Date Range | Rarity
-            event_line = f"**{special.name}** {emoji_display} • {date_range} • {rarity_str}"
+            # Count cards caught for this event
+            from ballsdex.core.models import BallInstance
+            card_count = await BallInstance.filter(special=special).count()
+            
+            # Format: Name | Emoji | Date Range | Rarity | Cards Caught
+            event_line = f"**{special.name}** {emoji_display} • {date_range} • {rarity_str} • {card_count} caught"
             event_list.append(event_line)
         
         # Join all events with newlines
@@ -83,4 +87,4 @@ class Events(commands.Cog):
         
         embed.set_footer(text=f"Total: {len(specials)} events")
         
-        await interaction.followup.send(embed=embed, ephemeral=False)
+        await interaction.followup.send(embed=embed, ephemeral=True)
