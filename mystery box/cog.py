@@ -107,7 +107,7 @@ class MysteryBox(commands.Cog):
             
             embed.set_footer(text=f"Server Time: {MYSTERY_BOX_TIMEZONE}")
             
-            await interaction.followup.send(embed=embed, ephemeral=True)
+            await interaction.followup.send(embed=embed, ephemeral=False)
             return
         
         # It's Monday! Check if they already claimed
@@ -132,7 +132,7 @@ class MysteryBox(commands.Cog):
             
             embed.set_footer(text="Come back next Monday for another mystery box!")
             
-            await interaction.followup.send(embed=embed, ephemeral=True)
+            await interaction.followup.send(embed=embed, ephemeral=False)
             return
         
         # They can claim! Give them a random ball
