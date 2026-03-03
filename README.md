@@ -1,4 +1,4 @@
-# BD packages used in DW Dex
+# BD packages used in DW Dex (v2 packages. Wont work in v3)
 If any used, like any other package...
 
 ## Installation 
